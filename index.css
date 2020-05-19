@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    background-image: url("helmet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2,h3,
+h4 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+font-family: new times roman;
+font-size: 22px;
+text-indent: 50px;
+Text-align: center;
+}
+
+main {
+margin: 10px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.7;
+}
+
+.first {
+margin: 10px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.5;
+}
+
+.second {
+margin: 10px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.5;
+}
+
+.third {
+    text-align: center;
+   margin: 10px;
+   background-color: #ffffff;
+   border: 1px solid black;
+    opacity: 0.5;
+}
+
+ul.a {
+  list-style-type: square;
+  color: black;
+  font-family: new times roman;
+  text-align: center;
+  
+}
+
+.image {
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+   width: 50%;
+}	
+
+.redText {
+  color: red;
+}
