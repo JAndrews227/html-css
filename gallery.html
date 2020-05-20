@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+<meta charset="utf-8" />
+<title>Hobbies</title>
+<link rel="stylesheet" type="text/css" href="gallery.css">
 </head>
+
+<script type="text/javascript">
+var numslides=0,currentslide=0;
+var slides = new Array();
+function StartSlideShow() {
+imgs=document.getElementsByTagName("img");
+for (i=0; i<imgs.length; i++) {
+ if (imgs[i].className != "slide") continue;
+ slides[numslides]=imgs[i];
+ if (numslides==0) {
+    imgs[i].style.display="block";
+ } else {
+ imgs[i].style.display="none";
+  }
+imgs[i].onclick=NextSlide;
+numslides++;
+}
+}
+function NextSlide() {
+slides[currentslide].style.display="none";
+currentslide++;
+if (currentslide >= numslides) currentslide = 0;
+slides[currentslide].style.display="block";
+}
+window.onload=StartSlideShow;
+</script>
+
 <body>
-    
+<h1>Jeramie Andrews</h1>
+<h2>Hobbies</h2>
+<img class="slide" src="travel.jpg" width="400" height="300" />
+<img class="slide" src="shooting.jpg" width="400" height="300" />
+<img class="slide" src="wood.jpg" width="400" height="300" />
+
+<p>Click the image to advance the slides.</p>
 </body>
+
+<nav>
+<a href="index.html">Home</a> |
+<a href="gallery.html">Hobbies</a> |
+<a href="contact.html">Contact</a> |
+</nav>
+
 </html>
